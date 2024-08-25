@@ -6,7 +6,7 @@ layout: default
   <div class="container">
     <h1 class="logo pull-left">
       <a href="/">
-        <span class="logo-title">{{ site.org_name }}</span>
+        <span class="logo-title">Hope For Relief</span>
       </a>
     </h1><!--//logo-->
     <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -34,10 +34,9 @@ layout: default
 <!-- ******PROMO****** -->
 <section id="promo" class="promo section offset-header">
   <div class="container text-center">
-    <h2 class="title"><span class="highlight">{{ site.org_name }}</span></h2>
-    <p class="intro">{{ site.org_summary }}</p>
+    <h2 class="title"><span class="highlight">Hope For Relief</span></h2>
+    <p class="intro">Our mission is to empower talented children to follow their scientific dreams, even if they come from underprivileged backgrounds.</p>
     <div class="btns">
-      <!--a class="btn btn-cta-secondary" href="#" target="_blank">Demo</a-->
       <a class="btn btn-outline btn-outline-medium scrollto" href="#about" target="_blank">Learn More <i class="fa fa-angle-double-down"></i></a>
     </div>
     <ul class="meta list-inline">
@@ -56,9 +55,7 @@ layout: default
         {% if site.instagram_username %}
         <li><a href="http://instagram.com/{{ site.instagram_username }}"><i class="fa fa-instagram"></i></a></li>
         {% endif %}
-        {% if site.org_general_email_inbox %}
-        <li class="last"><a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a></li>
-        {% endif %}
+        <li class="last"><a href="mailto: drmatin.dds@gmail.com"><i class="fa fa-envelope"></i></a></li>
       </ul>
     </div>
   </div>
@@ -68,7 +65,9 @@ layout: default
 <section id="about" class="about section">
   <div class="container">
     <h2 class="title text-center">About Us</h2>
-    <p class="intro text-center">{{ site.org_full_description }}</p>
+    <p class="intro text-center">
+      We aim to financially support talented children from underprivileged families by providing them the resources to pursue their scientific dreams and achieve a high level of knowledge. Our goal is to remove barriers for these talented children and ensure they have access to quality education.
+    </p>
   </div><!--//container-->
 </section><!--//about-->
 
@@ -122,7 +121,6 @@ layout: default
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
               </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;"><input type="text" name="{{ site.mailchimp_spam_guard }}" tabindex="-1" value=""></div>
               <div class="clear">
 
@@ -136,10 +134,6 @@ layout: default
         {% else %}
         <p><em>Sorry, email signup is not available at this time <i class="fa fa-frown-o"></i></em></p>
         {% endif %}
-
-        <!--form style="padding:3px;text-align:center;" action="https://tinyletter.com/{{ site.tinyletter_username }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter_username }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Subscribe to Updates</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" data-behavior="placeholder" placeholder="Email Address" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form-->
-
-
       </div>
     </div>
   </div><!--//container-->
@@ -184,7 +178,6 @@ layout: default
               <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form-->
             <!--//PayPal generated code ends-->
-
         </div><!--//btn-container-->
       </div><!--//cta-container-->
     </div><!--//donate-inner-->
@@ -197,30 +190,16 @@ layout: default
     <div class="contact-inner">
       <h2 class="title  text-center">Contact</h2>
       <address class="text-center">
-        <strong>{{ site.org_name }}</strong><br>
-        {% if site.org_street_address %}{{ site.org_street_address }},&nbsp;{% endif %}{% if site.org_address_suite %}{{ site.org_address_suite }}<br>{% endif %}
-        {% if site.org_city %}{{ site.org_city }},&nbsp;{% endif %}{% if site.org_state %}{{ site.org_state }}&nbsp;{% endif %}{% if site.org_zip %}{{ site.org_zip }}{% endif %}<br>
-        {% if site.org_phone %}
-        <abbr title="Phone">P:</abbr> {{ site.org_phone }}
-        {% endif %}
+        <strong>Hope For Relief</strong><br>
+        1/58, St George's Tce, Perth WA 6000<br>
+        ABN: 25 150 778 834<br>
       </address>
       <div class="clearfix"></div>
       <div class="info text-center">
         <h4 class="sub-title">Get Connected</h4>
         <ul class="social-icons list-inline">
-        {% if site.twitter_username %}
-        <li><a href="https://twitter.com/{{ site.org_twitter_username }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li><a href="https://www.facebook.com/{{ site.org_facebook_username }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        {% endif %}
-        {% if site.instagram_username %}
-        <li><a href="http://instagram.com/{{ site.org_instagram_username }}"><i class="fa fa-instagram"></i></a></li>
-        {% endif %}
-        {% if site.org_general_email_inbox %}
-        <li class="last"><a href="mailto: {{ site.org_general_email_inbox }}"><i class="fa fa-envelope"></i></a></li>
-        {% endif %}
-      </ul>
+          <li class="last"><a href="mailto: drmatin.dds@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
       </div><!--//info-->
     </div><!--//contact-inner-->
   </div><!--//container-->
