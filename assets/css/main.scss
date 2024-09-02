@@ -38,6 +38,7 @@
 .gallery {
   position: relative;
   overflow: hidden;
+  max-height: 500px; /* Set a maximum height for the gallery section */
 }
 
 .gallery-slider {
@@ -53,7 +54,8 @@
 
 .gallery-slider img {
   width: 100%;
-  height: auto;
+  height: 100%; /* Ensure the image fills the height of the gallery */
+  object-fit: cover; /* This ensures the image covers the entire container without distortion */
 }
 
 /* Optional: Controls to navigate between slides */
@@ -74,6 +76,7 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
 
 
 .navbar-nav .nav-item a {
