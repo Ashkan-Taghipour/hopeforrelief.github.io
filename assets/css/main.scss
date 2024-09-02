@@ -28,6 +28,14 @@
 // Import partials from `_sass` folder
 //
 
+.navbar-nav .nav-item a {
+  color: #ffffff !important; /* Change the menu items to white */
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #cccccc !important; /* Optional: Lighter shade on hover */
+}
+
 @import "default";
 
 //
