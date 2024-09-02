@@ -38,24 +38,25 @@
 .gallery {
   position: relative;
   overflow: hidden;
-  height: 80vh; /* Increase the height to 80% of the viewport height for better desktop display */
+  height: 80vh; /* Height for desktop */
 }
 
 .gallery-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%; /* Ensure it adjusts according to the number of slides */
+  width: 100%; /* Ensure the slider container spans the full width */
 }
 
 .gallery-slider .slide {
   min-width: 100%;
   box-sizing: border-box;
+  flex-shrink: 0; /* Prevent shrinking to avoid white space */
 }
 
 .gallery-slider img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
 /* Optional: Controls to navigate between slides */
@@ -80,7 +81,7 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .gallery {
-    height: 300px; /* Use a fixed height for mobile devices */
+    height: 300px; /* Height for mobile devices */
   }
 }
 
