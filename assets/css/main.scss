@@ -28,6 +28,12 @@
 // Import partials from `_sass` folder
 //
 
+@import "default";
+
+//
+// Custom CSS
+//
+
 .navbar-nav .nav-item a {
   color: #ffffff !important; /* Change the menu items to white */
 }
@@ -35,6 +41,7 @@
 .navbar-nav .nav-item a:hover {
   color: #cccccc !important; /* Optional: Lighter shade on hover */
 }
+
 /* Update the email-address styling */
 .social-icons {
     display: flex;
@@ -51,41 +58,57 @@
     vertical-align: middle; /* Align with the icon */
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: column; /* Stack the icon and text vertically */
+        align-items: center;
+    }
 
-@import "default";
-
-//
-// Insert custom css below this line
-//
+    .social-icons .email-address {
+        margin-left: 0; /* Remove left margin for centered text */
+        margin-top: 10px; /* Add top margin for spacing */
+        line-height: normal; /* Reset line-height for mobile */
+        font-size: 14px; /* Adjust font size if needed */
+    }
+}
 
 .disabled-link {
   pointer-events: none;
 }
+
 .logo-title:hover {
   text-decoration: none;
 }
+
 .promo .title {
   font-size: 65px;
   color: $color;
   margin-top: 0;
 }
+
 .btns {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .promo .meta {
     margin-top: 30px;
 }
+
 .donorbox {
   margin-top: 60px;
 }
+
 .join-us-intro {
   margin-top: 0;
   color: #ddd !important;
 }
+
 .highlight {
   color: $color-2 !important;
 }
+
 .promo .social-icons a {
     display: inline-block;
     background: darken($color, 20%);
@@ -105,6 +128,7 @@
     margin-right: 8px;
     float: left;
 }
+
 .btn-outline, .btn-outline:link, .btn-outline:visited {
     background-color: transparent;
     border-radius: 5px;
@@ -121,6 +145,7 @@
       color: darken($color, 15%);
     }
 }
+
 .btn-outline:hover {
     color: #fff !important;
     &.btn-outline-primary {
@@ -133,6 +158,7 @@
       background-color: darken($color, 15%);
     }
 }
+
 .features .form-inline {
   margin-top: 10px;
 }
