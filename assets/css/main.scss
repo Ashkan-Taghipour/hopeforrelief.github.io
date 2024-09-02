@@ -38,13 +38,13 @@
 .gallery {
   position: relative;
   overflow: hidden;
-  max-height: 500px; /* Set a maximum height for the gallery section */
+  height: 400px; /* Set a fixed height for the gallery section */
 }
 
 .gallery-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%; /* Adjust this based on the number of slides */
+  width: 100%; /* Set to 100% so it adjusts according to the number of slides */
 }
 
 .gallery-slider .slide {
@@ -76,7 +76,6 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
-
 
 
 .navbar-nav .nav-item a {
