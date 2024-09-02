@@ -44,13 +44,12 @@
 .gallery-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%; /* Ensure the slider container spans the full width */
+  width: 100%;
 }
 
 .gallery-slider .slide {
   min-width: 100%;
   box-sizing: border-box;
-  flex-shrink: 0; /* Prevent shrinking to avoid white space */
 }
 
 .gallery-slider img {
