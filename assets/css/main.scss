@@ -36,6 +36,17 @@
   color: #cccccc !important; /* Optional: Lighter shade on hover */
 }
 
+<!-- Update this section in your index.html -->
+<div class="social-media">
+    <div class="info text-center">
+        <ul class="social-icons list-inline">
+            <li><a href="mailto:drmatin.dds@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><span class="email-address">drmatin.dds@gmail.com</span></li> <!-- Add this line -->
+        </ul>
+    </div>
+</div>
+
+
 @import "default";
 
 //
