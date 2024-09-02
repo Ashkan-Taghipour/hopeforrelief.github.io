@@ -35,17 +35,13 @@
 .navbar-nav .nav-item a:hover {
   color: #cccccc !important; /* Optional: Lighter shade on hover */
 }
-
-<!-- Update this section in your index.html -->
-<div class="social-media">
-    <div class="info text-center">
-        <ul class="social-icons list-inline">
-            <li><a href="mailto:drmatin.dds@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            <li><span class="email-address">drmatin.dds@gmail.com</span></li> <!-- Add this line -->
-        </ul>
-    </div>
-</div>
-
+/* Add this CSS under the custom CSS section in main.scss */
+.email-address {
+  color: #ffffff; /* White color */
+  margin-left: 10px; /* Some space between the icon and the email text */
+  font-size: 16px; /* Adjust the font size as needed */
+  vertical-align: middle; /* Align it with the icon */
+}
 
 @import "default";
 
