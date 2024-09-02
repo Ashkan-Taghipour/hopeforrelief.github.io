@@ -35,13 +35,22 @@
 .navbar-nav .nav-item a:hover {
   color: #cccccc !important; /* Optional: Lighter shade on hover */
 }
-/* Add this CSS under the custom CSS section in main.scss */
-.email-address {
-  color: #ffffff; /* White color */
-  margin-left: 10px; /* Some space between the icon and the email text */
-  font-size: 16px; /* Adjust the font size as needed */
-  vertical-align: middle; /* Align it with the icon */
+/* Update the email-address styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.social-icons .email-address {
+    color: #ffffff; /* White color */
+    margin-left: 10px; /* Space between the icon and the email text */
+    font-size: 16px; /* Adjust the font size as needed */
+    display: inline-block;
+    line-height: 48px; /* Adjust the line-height to match the icon size */
+    vertical-align: middle; /* Align with the icon */
+}
+
 
 @import "default";
 
